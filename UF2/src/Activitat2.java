@@ -22,8 +22,8 @@ public class Activitat2 {
 		// Programa Fil, se inicia a los 5 segundos, después se ejecuta cada 6 segundos
 		schExService.scheduleWithFixedDelay(ob, 5, 6, TimeUnit.SECONDS);
 		
-		// Espera per acabar 10 segons
-		schExService.awaitTermination(10, TimeUnit.SECONDS);
+		// Esperamos 30 segundos para acabar porque es lo que tardaba
+		schExService.awaitTermination(30, TimeUnit.SECONDS);
 		
 		// Después de ejecutar todas las tareas, cerramos el grupo de subprocesos
 		schExService.shutdownNow();
