@@ -24,7 +24,7 @@ public class Activitat3 extends RecursiveTask<Long> {
 		// Cogemos el tiempo inicial
 		long inicio = System.currentTimeMillis();
 		ForkJoinPool pool = new ForkJoinPool();
-		long resultado = pool.invoke(new Activitat3(40));   
+		long resultado = pool.invoke(new Activitat3(50));   
 		// Cogemos el tiempo final
         long fin = System.currentTimeMillis();
      // Lo pasamos a segundos
