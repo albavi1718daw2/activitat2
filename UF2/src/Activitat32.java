@@ -15,6 +15,7 @@ public class Activitat32 {
          
         // Mostramos tanto el tiempo de ejecución como el resultado
         System.out.println("Segundos: " + tiempo + ", resultado: " + calculo);
+       
 	}
 	
 	// Método para calcular Fibonacci

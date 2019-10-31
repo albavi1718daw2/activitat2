@@ -14,7 +14,7 @@ public class Activitat3 extends RecursiveTask<Long> {
 		double calcul = java.lang.Math.cos(54879854);
 		if(numero <= 1) return numero;
 		Activitat3 fib1 = new Activitat3(numero-1);
-		//fib1.fork();
+		fib1.fork();
 		Activitat3 fib2 = new Activitat3(numero-2);
 		fib2.fork();
 		return fib1.compute()+ fib2.join();
@@ -24,7 +24,7 @@ public class Activitat3 extends RecursiveTask<Long> {
 		// Cogemos el tiempo inicial
 		long inicio = System.currentTimeMillis();
 		ForkJoinPool pool = new ForkJoinPool();
-		long resultado = pool.invoke(new Activitat3(50));   
+		long resultado = pool.invoke(new Activitat3(40));   
 		// Cogemos el tiempo final
         long fin = System.currentTimeMillis();
      // Lo pasamos a segundos
