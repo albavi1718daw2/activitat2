@@ -10,7 +10,7 @@ class TiradaDaus {
 		return tiradaDau;
 	}
 
-	public synchronized void setSumaTirada(int e) {
+	public void setSumaTirada(int e) {
 		tiradaDau += e;
 	}
 }
